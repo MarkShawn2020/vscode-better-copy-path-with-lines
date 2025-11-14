@@ -1,10 +1,10 @@
 {
   "name": "copy-path-with-line-number",
-  "displayName": "copy-path-with-line-number",
-  "description": "copy absolute or relative path with current line number or selected lines range info in editor context",
+  "displayName": "Copy Path:Line - Enhanced",
+  "description": "Copy file paths with line numbers - Enhanced fork with faster UX and fixed line gutter support",
   "version": "0.1.3",
   "icon": "images/icon.png",
-  "publisher": "qishan233",
+  "publisher": "MarkShawn2020",
   "license": "SEE LICENSE IN LICENSE.md",
   "engines": {
     "vscode": "^1.91.0"
@@ -13,10 +13,18 @@
     "Other"
   ],
   "keywords": [
-    "copy",
-    "relative path",
+    "copy path",
     "line number",
-    "custom file separator"
+    "relative path",
+    "absolute path",
+    "file path",
+    "clipboard",
+    "code reference",
+    "github",
+    "collaboration",
+    "productivity",
+    "line range",
+    "editor"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
@@ -124,9 +132,9 @@
   "pricing": "Free",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qishan233/copy-path-with-line-number.git"
+    "url": "https://github.com/MarkShawn2020/copy-path-with-line-number.git"
   },
-  "homepage": "https://github.com/qishan233/copy-path-with-line-number/blob/main/README.md",
+  "homepage": "https://github.com/MarkShawn2020/copy-path-with-line-number/blob/main/README.md",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -134,7 +142,11 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test",
-    "clean": "rm -rf out"
+    "clean": "rm -rf out",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "publish:minor": "vsce publish minor",
+    "publish:patch": "vsce publish patch"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.7",
@@ -144,6 +156,7 @@
     "@typescript-eslint/parser": "^7.11.0",
     "@vscode/test-cli": "^0.0.9",
     "@vscode/test-electron": "^2.4.0",
+    "@vscode/vsce": "^3.7.0",
     "eslint": "^8.57.0",
     "typescript": "^5.4.5"
   },

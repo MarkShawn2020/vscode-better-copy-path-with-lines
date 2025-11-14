@@ -1,5 +1,10 @@
 # Copy Path with Line Number
 
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/MarkShawn2020.copy-path-with-line-number?style=flat&label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/MarkShawn2020.copy-path-with-line-number?style=flat)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/MarkShawn2020.copy-path-with-line-number?style=flat)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number)
+[![GitHub](https://img.shields.io/github/license/MarkShawn2020/copy-path-with-line-number?style=flat)](https://github.com/MarkShawn2020/copy-path-with-line-number/blob/main/LICENSE.md)
+
 > 🚀 VSCode extension for copying file paths with line numbers | [中文文档](./README_ZH.md)
 
 ## 💡 What is This?
@@ -65,7 +70,19 @@ A VSCode extension that copies file paths **with line numbers** in a single clic
 
 ## 📥 Installation
 
-### From Release (Recommended)
+### From VSCode Marketplace (Recommended)
+
+1. Open VSCode
+2. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+3. Search for "Copy Path:Line"
+4. Click Install
+
+Or install via command line:
+```bash
+code --install-extension MarkShawn2020.copy-path-with-line-number
+```
+
+### From GitHub Release
 
 1. Download the latest `.vsix` from [Releases](https://github.com/MarkShawn2020/copy-path-with-line-number/releases)
 2. In VSCode: `Extensions` → `...` → `Install from VSIX`

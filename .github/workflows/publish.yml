@@ -1,0 +1,70 @@
+name: Publish to VSCode Marketplace
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish (leave empty to use package.json version)'
+        required: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Compile TypeScript
+        run: npm run compile
+
+      - name: Package extension
+        run: npm run package
+
+      - name: Publish to VSCode Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: |
+          if [ -n "${{ github.event.inputs.version }}" ]; then
+            npx vsce publish ${{ github.event.inputs.version }} -p $VSCE_PAT
+          else
+            npx vsce publish -p $VSCE_PAT
+          fi
+
+      - name: Get package version
+        id: package-version
+        run: echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: '*.vsix'
+          name: Release v${{ steps.package-version.outputs.version }}
+          body: |
+            ## Changes
+            See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details.
+
+            ## Installation
+            Download the `.vsix` file below and install via:
+            - VSCode: Extensions → `...` → Install from VSIX
+            - CLI: `code --install-extension copy-path-with-line-number-${{ steps.package-version.outputs.version }}.vsix`
+
+            Or install from [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

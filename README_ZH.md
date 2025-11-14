@@ -1,5 +1,10 @@
 # 复制路径和行号
 
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/MarkShawn2020.copy-path-with-line-number?style=flat&label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/MarkShawn2020.copy-path-with-line-number?style=flat)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/MarkShawn2020.copy-path-with-line-number?style=flat)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number)
+[![GitHub](https://img.shields.io/github/license/MarkShawn2020/copy-path-with-line-number?style=flat)](https://github.com/MarkShawn2020/copy-path-with-line-number/blob/main/LICENSE.md)
+
 > 🚀 一键复制带行号的文件路径的 VSCode 扩展 | [English Docs](./README.md)
 
 ## 💡 这是什么？
@@ -66,7 +71,19 @@
 
 ## 📥 安装
 
-### 从 Release 安装（推荐）
+### 从 VSCode 市场安装（推荐）
+
+1. 打开 VSCode
+2. 进入扩展市场（`Ctrl+Shift+X` / `Cmd+Shift+X`）
+3. 搜索 "Copy Path:Line"
+4. 点击安装
+
+或通过命令行安装:
+```bash
+code --install-extension MarkShawn2020.copy-path-with-line-number
+```
+
+### 从 GitHub Release 安装
 
 1. 从 [Releases](https://github.com/MarkShawn2020/copy-path-with-line-number/releases) 下载最新的 `.vsix`
 2. 在 VSCode 中：`扩展` → `...` → `从 VSIX 安装`
