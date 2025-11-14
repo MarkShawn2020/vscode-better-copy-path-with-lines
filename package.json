@@ -136,17 +136,19 @@
   },
   "homepage": "https://github.com/MarkShawn2020/better-copy-path-with-lines/blob/main/README.md",
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
+    "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test",
     "clean": "rm -rf out",
-    "package": "vsce package",
-    "publish": "vsce publish",
-    "publish:minor": "vsce publish minor",
-    "publish:patch": "vsce publish patch"
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies",
+    "publish:minor": "vsce publish minor --no-dependencies",
+    "publish:patch": "vsce publish patch --no-dependencies",
+    "publish:ovsx": "ovsx publish --no-dependencies",
+    "publish:all": "vsce publish --no-dependencies && ovsx publish --no-dependencies"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.7",
@@ -158,6 +160,7 @@
     "@vscode/test-electron": "^2.4.0",
     "@vscode/vsce": "^3.7.0",
     "eslint": "^8.57.0",
+    "ovsx": "^0.10.6",
     "typescript": "^5.4.5"
   },
   "dependencies": {

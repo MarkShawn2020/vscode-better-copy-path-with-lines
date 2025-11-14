@@ -1,9 +1,10 @@
-# Copy Path with Line Number
+# Better Copy Path with Lines
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/MarkShawn2020.better-copy-path-with-lines?style=flat&label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines)
-[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/MarkShawn2020.better-copy-path-with-lines?style=flat)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines)
-[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/MarkShawn2020.better-copy-path-with-lines?style=flat)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines)
-[![GitHub](https://img.shields.io/github/license/MarkShawn2020/better-copy-path-with-lines?style=flat)](https://github.com/MarkShawn2020/better-copy-path-with-lines/blob/main/LICENSE.md)
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/MarkShawn2020.better-copy-path-with-lines?style=flat&label=VS%20Code&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines)
+[![Open VSX](https://img.shields.io/open-vsx/v/MarkShawn2020/better-copy-path-with-lines?style=flat&label=Open%20VSX&logo=eclipse)](https://open-vsx.org/extension/MarkShawn2020/better-copy-path-with-lines)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/MarkShawn2020.better-copy-path-with-lines?style=flat)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/MarkShawn2020.better-copy-path-with-lines?style=flat)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines)
+[![License](https://img.shields.io/github/license/MarkShawn2020/better-copy-path-with-lines?style=flat)](https://github.com/MarkShawn2020/better-copy-path-with-lines/blob/main/LICENSE.md)
 
 > 🚀 VSCode extension for copying file paths with line numbers | [中文文档](./README_ZH.md)
 
@@ -70,24 +71,35 @@ A VSCode extension that copies file paths **with line numbers** in a single clic
 
 ## 📥 Installation
 
-### From VSCode Marketplace (Recommended)
+### Option 1: VS Code Marketplace (Recommended)
 
 1. Open VSCode
 2. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
-3. Search for "Copy Path:Line"
+3. Search for "Better Copy Path with Lines"
 4. Click Install
 
-Or install via command line:
+**Or install via CLI:**
 ```bash
 code --install-extension MarkShawn2020.better-copy-path-with-lines
 ```
 
-### From GitHub Release
+### Option 2: Open VSX Registry
 
-1. Download the latest `.vsix` from [Releases](https://github.com/MarkShawn2020/better-copy-path-with-lines/releases)
+For VSCodium, Code-OSS, or other VS Code compatible editors:
+
+```bash
+# VSCodium
+codium --install-extension MarkShawn2020.better-copy-path-with-lines
+
+# Or download from https://open-vsx.org/extension/MarkShawn2020/better-copy-path-with-lines
+```
+
+### Option 3: Manual Installation
+
+1. Download the latest `.vsix` from [GitHub Releases](https://github.com/MarkShawn2020/better-copy-path-with-lines/releases)
 2. In VSCode: `Extensions` → `...` → `Install from VSIX`
 
-### From Source
+### Option 4: From Source
 
 ```bash
 git clone https://github.com/MarkShawn2020/better-copy-path-with-lines.git
