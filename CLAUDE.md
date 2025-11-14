@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-VSCode extension that copies file paths (absolute/relative) with optional line numbers and range information. Supports multiple file selection, custom separators, and i18n (English/Chinese).
+VSCode extension that copies file paths (absolute/relative) **with line numbers** and range information. Focused on the core value of adding line number context to file paths - use VSCode native "Copy Path" for paths without line numbers. Supports multiple line selection, custom separators, and i18n (English/Chinese).
 
 ## Development Commands
 
@@ -84,15 +84,17 @@ When copying multiple files/lines:
 ## Extension Points
 
 ### Commands (registered in package.json)
-- `qishan233.copy.relative.path`
-- `qishan233.copy.absolute.path`
-- `qishan233.copy.relative.path.line`
-- `qishan233.copy.absolute.path.line`
+- `qishan233.copy.relative.path.line` - Copy relative path with line number (format: `path:line`)
+- `qishan233.copy.absolute.path.line` - Copy absolute path with line number (format: `path:line`)
 
 ### Context Menus
-- Explorer context (file tree right-click)
-- Editor title context (tab right-click)
-- Editor context (code editor right-click) - shows line number variants
+- **Editor context** (code editor right-click) - shows 2 commands directly (no submenu)
+- **Line number gutter context** (line number area right-click) - shows 2 commands directly (no submenu)
+
+**Design Philosophy** (v0.1.1+):
+- Removed non-line commands (use VSCode native "Copy Path" instead)
+- Removed submenus for faster access (2 clicks vs 3)
+- Clear focus on core value: adding line number context to file paths
 
 ## Common Patterns
 

@@ -33,8 +33,6 @@ export {
 };
 
 enum CopyCommandType {
-    CopyRelativePath,
-    CopyAbsolutePath,
     CopyRelativePathWithLine,
     CopyAbsolutePathWithLine,
 }
@@ -77,10 +75,8 @@ class ConcreteCopyCommand implements Command {
 }
 
 const CommandContainer = new Map<CopyCommandType, Command>([
-    [CopyCommandType.CopyRelativePath, new ConcreteCopyCommand(false, false)],
-    [CopyCommandType.CopyAbsolutePath, new ConcreteCopyCommand(true, false)],
-    [CopyCommandType.CopyAbsolutePathWithLine, new ConcreteCopyCommand(true, true)],
     [CopyCommandType.CopyRelativePathWithLine, new ConcreteCopyCommand(false, true)],
+    [CopyCommandType.CopyAbsolutePathWithLine, new ConcreteCopyCommand(true, true)],
 ]);
 
 

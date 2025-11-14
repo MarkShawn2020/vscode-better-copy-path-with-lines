@@ -2,7 +2,7 @@
   "name": "copy-path-with-line-number",
   "displayName": "copy-path-with-line-number",
   "description": "copy absolute or relative path with current line number or selected lines range info in editor context",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icon": "images/icon.png",
   "publisher": "qishan233",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -23,86 +23,36 @@
   "contributes": {
     "commands": [
       {
-        "command": "qishan233.copy.relative.path",
-        "title": "%submenu.copy.relative.path.title%"
-      },
-      {
-        "command": "qishan233.copy.absolute.path",
-        "title": "%submenu.copy.absolute.path.title%"
-      },
-      {
         "command": "qishan233.copy.relative.path.line",
-        "title": "%submenu.copy.relative.path.line.title%"
+        "title": "%command.copy.relative.path.line.title%"
       },
       {
         "command": "qishan233.copy.absolute.path.line",
-        "title": "%submenu.copy.absolute.path.line.title%"
+        "title": "%command.copy.absolute.path.line.title%"
       }
     ],
     "menus": {
-      "explorer/context": [
-        {
-          "submenu": "qishan233.copy.path",
-          "group": "copy_it@001"
-        }
-      ],
-      "editor/title/context": [
-        {
-          "submenu": "qishan233.copy.path",
-          "group": "copy_it@001"
-        }
-      ],
       "editor/context": [
         {
-          "submenu": "qishan233.copy.path.with.line",
-          "group": "copy_it@001"
+          "command": "qishan233.copy.relative.path.line",
+          "group": "9_cutcopypaste@100"
+        },
+        {
+          "command": "qishan233.copy.absolute.path.line",
+          "group": "9_cutcopypaste@101"
         }
       ],
       "editor/lineNumber/context": [
         {
-          "submenu": "qishan233.copy.path.with.line",
-          "group": "copy_it@001"
-        }
-      ],
-      "qishan233.copy.path.with.line": [
-        {
-          "command": "qishan233.copy.relative.path",
-          "group": "copy_it@1"
-        },
-        {
           "command": "qishan233.copy.relative.path.line",
-          "group": "copy_it@2"
-        },
-        {
-          "command": "qishan233.copy.absolute.path",
-          "group": "copy_it@3"
+          "group": "9_cutcopypaste@100"
         },
         {
           "command": "qishan233.copy.absolute.path.line",
-          "group": "copy_it@4"
-        }
-      ],
-      "qishan233.copy.path": [
-        {
-          "command": "qishan233.copy.relative.path",
-          "group": "copy_it@1"
-        },
-        {
-          "command": "qishan233.copy.absolute.path",
-          "group": "copy_it@2"
+          "group": "9_cutcopypaste@101"
         }
       ]
     },
-    "submenus": [
-      {
-        "id": "qishan233.copy.path.with.line",
-        "label": "%menu.copy.path.with.line%"
-      },
-      {
-        "id": "qishan233.copy.path",
-        "label": "%menu.copy.path%"
-      }
-    ],
     "configuration": {
       "title": "%configuration.title%",
       "properties": {

@@ -36,6 +36,14 @@ It also supports Chinese and English(need reload window to active the effect aft
 
 ## Release Notes
 
+### 0.1.1
+
+**Major Refactoring - Focused on Core Value**:
+- Removed non-line commands (use VSCode native "Copy Path" for paths without line numbers)
+- Flattened menu structure - removed submenus for faster access (2 clicks instead of 3)
+- Simplified command labels to "Copy Relative Path:Line" and "Copy Absolute Path:Line"
+- Only show path-with-line commands in editor and line number gutter contexts
+
 ### 0.1.0
 
 Add line number gutter context menu support - users can now right-click in the line number area to copy path with line number.

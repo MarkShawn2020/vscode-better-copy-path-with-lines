@@ -1,10 +1,6 @@
 {
-    "menu.copy.path": "Copy Path(Custom version)",
-    "menu.copy.path.with.line": "Copy Path With Line Number",
-    "submenu.copy.relative.path.title": "Copy Relative Path Only",
-    "submenu.copy.absolute.path.title": "Copy Absolute Path Only",
-    "submenu.copy.relative.path.line.title": "Copy Relative Path and Line Number",
-    "submenu.copy.absolute.path.line.title": "Copy Absolute Path and Line Number",
+    "command.copy.relative.path.line.title": "Copy Relative Path:Line",
+    "command.copy.absolute.path.line.title": "Copy Absolute Path:Line",
     "configuration.description.copied.show.message": "show message after content is written to clipboard",
     "configuration.description.path.separator": "set path separator for copied path",
     "configuration.description.range.connector": "set connector for range of selection",
