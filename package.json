@@ -1,8 +1,8 @@
 {
   "name": "better-copy-path-with-lines",
-  "displayName": "Copy Path:Line - Enhanced",
+  "displayName": "Better Copy Path with Lines",
   "description": "Copy file paths with line numbers - Enhanced fork with faster UX and fixed line gutter support",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "icon": "images/icon.png",
   "publisher": "MarkShawn2020",
   "license": "SEE LICENSE IN LICENSE.md",
