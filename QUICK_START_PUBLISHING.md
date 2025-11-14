@@ -75,7 +75,7 @@ npm run publish
 
 ### Step 4: Verify Extension on Marketplace (2 minutes)
 
-Visit: https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number
+Visit: https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-line
 
 Check:
 - [ ] Extension appears
@@ -147,7 +147,7 @@ npm run package
 npx vsce ls --tree
 
 # Check extension info
-npx vsce show MarkShawn2020.copy-path-with-line-number
+npx vsce show MarkShawn2020.better-copy-path-with-line
 
 # Force re-login
 npx vsce logout
@@ -197,7 +197,7 @@ Files created:
 - **Official Guide**: https://code.visualstudio.com/api/working-with-extensions/publishing-extension
 - **Marketplace Portal**: https://marketplace.visualstudio.com/manage
 - **PAT Management**: https://dev.azure.com/_usersSettings/tokens
-- **Extension Page**: https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number
+- **Extension Page**: https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-line
 
 ---
 

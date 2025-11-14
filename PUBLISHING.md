@@ -96,7 +96,7 @@ git push --tags
 ## Post-Publish Verification
 
 1. Visit your extension page:
-   - https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.copy-path-with-line-number
+   - https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-line
 2. Verify:
    - Description displays correctly
    - Screenshots/GIFs load properly
@@ -104,7 +104,7 @@ git push --tags
    - Install button works
 3. Test installation:
    ```bash
-   code --install-extension MarkShawn2020.copy-path-with-line-number
+   code --install-extension MarkShawn2020.better-copy-path-with-line
    ```
 
 ## Troubleshooting
@@ -167,10 +167,10 @@ npx vsce ls --tree
 npm run package
 
 # Show package info
-npx vsce show MarkShawn2020.copy-path-with-line-number
+npx vsce show MarkShawn2020.better-copy-path-with-line
 
 # Unpublish (use with caution!)
-npx vsce unpublish MarkShawn2020.copy-path-with-line-number
+npx vsce unpublish MarkShawn2020.better-copy-path-with-line
 ```
 
 ## Resources
