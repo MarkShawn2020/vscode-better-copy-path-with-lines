@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/MarkShawn2020/better-copy-path-with-lines/compare/v0.2.0...v0.2.1) (2025-11-16)
+
+
+### Bug Fixes
+
+* update command namespace from qishan233 to markshawn2020 ([d02c63f](https://github.com/MarkShawn2020/better-copy-path-with-lines/commit/d02c63f921478faab2550d4d3c4df86a95b3a134))
+
 # [0.2.0](https://github.com/MarkShawn2020/better-copy-path-with-lines/compare/v0.1.3...v0.2.0) (2025-11-14)
 
 
