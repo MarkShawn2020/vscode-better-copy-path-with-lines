@@ -1,5 +1,5 @@
 {
-  "name": "better-copy-path-with-lines",
+  "name": "vscode-better-copy-path-with-lines",
   "displayName": "Better Copy Path with Lines",
   "description": "Copy file paths with line numbers - Enhanced fork with faster UX and fixed line gutter support",
   "version": "0.2.4",
@@ -135,9 +135,9 @@
   "pricing": "Free",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MarkShawn2020/better-copy-path-with-lines.git"
+    "url": "https://github.com/MarkShawn2020/vscode-better-copy-path-with-lines.git"
   },
-  "homepage": "https://github.com/MarkShawn2020/better-copy-path-with-lines/blob/main/README.md",
+  "homepage": "https://github.com/MarkShawn2020/vscode-better-copy-path-with-lines/blob/main/README.md",
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",

@@ -116,7 +116,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 
 ## 🐛 Issues & Support
 
-Report bugs: [GitHub Issues](https://github.com/MarkShawn2020/better-copy-path-with-lines/issues)
+Report bugs: [GitHub Issues](https://github.com/MarkShawn2020/vscode-better-copy-path-with-lines/issues)
 
 ## 📝 Release Notes
 
