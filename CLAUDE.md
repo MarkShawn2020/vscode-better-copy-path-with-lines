@@ -9,18 +9,21 @@ VSCode extension that copies file paths (absolute/relative) **with line numbers*
 ## Development Commands
 
 ### Build & Compile
-- `npm run compile` - Compile TypeScript to JavaScript (output: `out/`)
-- `npm run watch` - Watch mode for development
-- `npm run vscode:prepublish` - Pre-publish preparation (runs compile)
-- `npm run clean` - Remove compiled output
+- `pnpm compile` - Compile TypeScript to JavaScript (output: `out/`)
+- `pnpm watch` - Watch mode for development
+- `pnpm clean` - Remove compiled output
 
 ### Testing & Linting
-- `npm run lint` - Run ESLint on TypeScript files
-- `npm run test` - Run tests (requires compile + lint)
-- `npm run pretest` - Pre-test hook (compile + lint)
+- `pnpm lint` - Run ESLint on TypeScript files
+- `pnpm test` - Run tests (requires compile + lint)
+
+### Publishing
+- `pnpm package` - Create .vsix package
+- `pnpm publish:all` - Publish to VS Code Marketplace + Open VSX
+- Uses semantic-release via GitHub Actions (push `feat:` or `fix:` commits)
 
 ### Development Workflow
-- Use F5 in VSCode to launch Extension Development Host (configured in `.vscode/launch.json`)
+- Use F5 in VSCode to launch Extension Development Host
 - The preLaunchTask automatically compiles before launching
 
 ## Architecture
@@ -28,7 +31,7 @@ VSCode extension that copies file paths (absolute/relative) **with line numbers*
 ### Core Pattern: Decorator + Strategy + Command
 
 **Entry Point** (`src/extension.ts`):
-- Registers 4 VSCode commands that call `DoCopy()` with different `CopyCommandType` enums
+- Registers 2 VSCode commands that call `DoCopy()` with different `CopyCommandType` enums
 - Minimal activation logic, delegates to facade
 
 **Facade Layer** (`src/facade.ts`):
@@ -76,10 +79,6 @@ When copying multiple files/lines:
 - UI strings use `%tokens%` in `package.json`
 - Resolved via `package.nls.json` (English) / `package.nls.zh-cn.json` (Chinese)
 - VSCode automatically loads based on display language
-
-### Source Maps
-- Uses `source-map-support` package for better stack traces in development
-- Enabled via `sourceMap: true` in `tsconfig.json`
 
 ## Extension Points
 

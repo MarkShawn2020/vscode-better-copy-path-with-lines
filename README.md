@@ -1,13 +1,27 @@
-# Better Copy Path with Lines
+<p align="center">
+  <img src="docs/images/cover.png" alt="Better Copy Path with Lines Cover" width="100%">
+</p>
 
-**Copy file paths with line numbers in one click** - Perfect for code reviews, bug reports, and team collaboration.
+<h1 align="center">
+  <img src="assets/logo.svg" width="32" height="32" alt="Logo" align="top">
+  Better Copy Path with Lines
+</h1>
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/MarkShawn2020.better-copy-path-with-lines?style=flat&label=VS%20Code&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines)
-[![Open VSX](https://img.shields.io/open-vsx/v/MarkShawn2020/better-copy-path-with-lines?style=flat&label=Open%20VSX&logo=eclipse)](https://open-vsx.org/extension/MarkShawn2020/better-copy-path-with-lines)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/i/MarkShawn2020.better-copy-path-with-lines?style=flat&label=downloads)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/MarkShawn2020.better-copy-path-with-lines?style=flat&label=rating)](https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines)
+<p align="center">
+  <strong>Copy file paths with line numbers in one click</strong><br>
+  <sub>VS Code · VSCodium · Open VSX</sub>
+</p>
 
-[English](#) • [中文文档](./README_ZH.md)
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines"><img src="https://img.shields.io/visual-studio-marketplace/v/MarkShawn2020.better-copy-path-with-lines?style=flat&label=VS%20Code&logo=visual-studio-code" alt="VS Code Marketplace"></a>
+  <a href="https://open-vsx.org/extension/MarkShawn2020/better-copy-path-with-lines"><img src="https://img.shields.io/open-vsx/v/MarkShawn2020/better-copy-path-with-lines?style=flat&label=Open%20VSX&logo=eclipse" alt="Open VSX"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines"><img src="https://img.shields.io/visual-studio-marketplace/i/MarkShawn2020.better-copy-path-with-lines?style=flat&label=downloads" alt="Downloads"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=MarkShawn2020.better-copy-path-with-lines"><img src="https://img.shields.io/visual-studio-marketplace/r/MarkShawn2020.better-copy-path-with-lines?style=flat&label=rating" alt="Rating"></a>
+</p>
+
+<p align="center">
+  <a href="#">English</a> · <a href="./README_ZH.md">中文文档</a>
+</p>
 
 ## ⚡ Quick Demo
 
